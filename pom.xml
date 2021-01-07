@@ -7,7 +7,7 @@
     <groupId>com.GreenJon902.TrashMC</groupId>
     <artifactId>TrashMCTest</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -17,12 +17,17 @@
 
     <dependencies>
 
-        <!-- junit 5, unit test -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.3.1</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jline</groupId>
+            <artifactId>jline</artifactId>
+            <version>3.18.0</version>
         </dependency>
 
     </dependencies>

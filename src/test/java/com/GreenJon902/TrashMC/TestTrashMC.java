@@ -2,9 +2,9 @@ package com.GreenJon902.TrashMC;
 
 import org.junit.jupiter.api.Test;
 
-public class TestMain {
+public class TestTrashMC {
     @Test
-    public void testLucky() {
-        Main.start();
+    public void testTrashMC() {
+        TrashMC.start();
     }
 }
