@@ -1,6 +1,8 @@
 package com.GreenJon902.TrashMC;
 
 
+import com.GreenJon902.TrashMC.Graphics.Window;
+
 import java.util.logging.Logger;
 
 public class TrashMC {
@@ -9,8 +11,8 @@ public class TrashMC {
     public static Boolean running = false;
 
     public static void setup() {
-        Renderer r = new Renderer();
-        r.start();
+        Window window = new Window();
+        window.open();
     }
 
 
