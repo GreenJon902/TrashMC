@@ -6,13 +6,19 @@ import java.util.logging.Logger;
 public class TrashMC {
     private static final Logger LOGGER = Logger.getLogger(TrashMC.class.getName());
 
+    public static Boolean running = false;
+
     public static void setup() {
-        System.setProperty("java.util.logging.SimpleFormatter.format",
-                "[%1$tF %1$tT] [%4$-7s] %5$s %n");
     }
 
 
     public static void start() {
+        if (running) {
+            throw new RuntimeException("Cannot start TrashMC if it is already running");
+        }
+
+        running = true;
+
         LOGGER.info("TrashMC Setting up");
 
         setup();
