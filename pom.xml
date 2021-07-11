@@ -15,6 +15,7 @@
     </properties>
 
 
+
     <dependencies>
 
         <dependency>
@@ -23,14 +24,25 @@
             <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.jline</groupId>
             <artifactId>jline</artifactId>
             <version>3.18.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>net.postgis</groupId>
+            <artifactId>postgis-jdbc-java2d</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
+
 
 
     <build>

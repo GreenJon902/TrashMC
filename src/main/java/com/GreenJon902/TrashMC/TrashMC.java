@@ -9,6 +9,8 @@ public class TrashMC {
     public static Boolean running = false;
 
     public static void setup() {
+        Renderer r = new Renderer();
+        r.start();
     }
 
 
