@@ -4,4 +4,7 @@ public class GrassBlock extends Block {
     public static String identifier = "block.grass";
 
 
+    public GrassBlock(int[] pos) {
+        super(pos);
+    }
 }
