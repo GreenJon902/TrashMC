@@ -11,6 +11,7 @@ public class TestRenderBlocks {
     public void testRenderBlocks() {
         Window window = new Window();
         BlockRenderer.blocks.add(new int[]{0, 0, 0});
+        BlockRenderer.blocks.add(new int[]{50, 6, 0});
         window.open();
     }
 }
