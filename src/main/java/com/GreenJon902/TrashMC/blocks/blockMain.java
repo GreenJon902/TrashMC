@@ -1,7 +1,7 @@
 package com.GreenJon902.TrashMC.blocks;
 
 public class blockMain {
-    String id = "None";
+    String identifier = "None";
     int[] pos = {0, 0, 0};
 
     //Texture get_texture; {
