@@ -31,6 +31,7 @@ public class Window extends JFrame {
         long time;
         long dTime;
 
+        //noinspection InfiniteLoopStatement
         while (true) {
             time = System.nanoTime();
             dTime = time - lastTime;
