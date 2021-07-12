@@ -10,7 +10,7 @@ public class Window extends JFrame {
 
     public Window() {
         super("TrashMC");
-        setSize(300, 80);
+        setSize(500, 500);
 
         build();
     }
