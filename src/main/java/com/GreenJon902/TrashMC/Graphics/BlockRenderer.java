@@ -9,6 +9,8 @@ public class BlockRenderer extends Canvas {
     public static ArrayList<int[]> blocks = new ArrayList<>();
 
     public void paint(Graphics g) {
+
+
         Font font = new Font("Serif", Font.PLAIN, 30);
         g.setFont(font);
 
