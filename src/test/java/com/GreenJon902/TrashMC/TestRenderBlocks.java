@@ -13,7 +13,7 @@ public class TestRenderBlocks {
     @Test
     public void testRenderBlocks() {
         Window window = new Window();
-        BlockRenderer.blocks.add(new Vec4());
+        BlockRenderer.blocks.add(new Vec4(124, 5, 30, 1));
         window.open();
     }
 }
