@@ -30,4 +30,10 @@ public class TrashMC {
         LOGGER.info("TrashMC Starting");
         LOGGER.info("TrashMC Finished");
     }
+
+    public static void main(String[] args) {
+        System.out.println("yo");
+        setup();
+        start();
+    }
 }

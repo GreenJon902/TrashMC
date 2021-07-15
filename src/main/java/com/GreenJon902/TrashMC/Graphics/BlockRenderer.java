@@ -1,23 +1,26 @@
 package com.GreenJon902.TrashMC.Graphics;
 
 
-import com.hackoeur.jglm.Mat4;
-import com.hackoeur.jglm.Matrices;
-import com.hackoeur.jglm.Vec3;
+//import com.hackoeur.jglm.Mat4;
+//import com.hackoeur.jglm.Matrices;
+//import com.hackoeur.jglm.Vec3;
+//import com.hackoeur.jglm.Vec4;
+
+//import java.awt.*;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.List;
+
 import com.hackoeur.jglm.Vec4;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
-public class BlockRenderer extends Canvas {
+public class BlockRenderer {
     public static ArrayList<Vec4> blocks = new ArrayList<>();
 
-    public static Vec4 camera = new Vec4(-100, 100, 100, 1);
+    /*public static Vec4 camera = new Vec4(0, 0, -100, 1);
 
-    public void paint(Graphics g) {
-        g.clearRect(0, 0, getWidth(), getHeight());
+    public static void draw(Graphics g) {
         g.setColor(Color.red);
 
         int[] xPoints = new int[4];
@@ -137,7 +140,7 @@ public class BlockRenderer extends Canvas {
     }
 
 
-    private int[] projectPlain(float x, float y, float z, float w) {
+    private static int[] projectPlain(float x, float y, float z, float w) {
         Mat4 cameraMatrix = Matrices.lookAt(new Vec3(camera.getX(), camera.getY(), camera.getZ()), new Vec3(0, 0, 0), new Vec3(0, 1, 0));
         Mat4 projectionMatrix = Matrices.perspective(45, 1, 0.1f, 1000).multiply(cameraMatrix);
         Mat4 modelMatrix = new Mat4(x, 0, 0, 0,
@@ -158,5 +161,5 @@ public class BlockRenderer extends Canvas {
 
         return new int[]{(int) nx, (int) ny};
     }
-
+    */
 }
