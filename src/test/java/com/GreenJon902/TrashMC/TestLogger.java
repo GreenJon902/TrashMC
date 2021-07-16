@@ -1,11 +1,10 @@
 package com.GreenJon902.TrashMC;
 
-import com.GreenJon902.TrashMC.Logger.BaseLogger;
-import com.GreenJon902.TrashMC.Logger.ClassLogger;
+import com.GreenJon902.TrashMC.Logger.Logger;
 import com.GreenJon902.TrashMC.Logger.StaticLogger;
 import org.junit.jupiter.api.Test;
 
-public class TestLogger extends ClassLogger {
+public class TestLogger {
     @Test
     public void testStaticLogger() {
         StaticLogger.logInfo("Static logger here");
@@ -24,10 +23,10 @@ public class TestLogger extends ClassLogger {
     }
 
     @Test
-    public void testBaseLogger() {
-        BaseLogger l = new BaseLogger();
+    public void testLogger() {
+        Logger l = new Logger();
 
-        l.logInfo("Base logger here");
+        l.logInfo("Logger here");
         l.logInfo("Lets join some objects");
         l.logInfo("This should output 1, 2, true, \"hello\"");
         l.logInfo(1, 2, true, "hello");
@@ -43,10 +42,10 @@ public class TestLogger extends ClassLogger {
     }
 
     @Test
-    public void testBaseLoggerWithName() {
-        BaseLogger l = new BaseLogger("Dave");
+    public void testLoggerWithName() {
+        Logger l = new Logger("Dave");
 
-        l.logInfo("Base logger with a name here");
+        l.logInfo("Logger with a name here");
         l.logInfo("I'm called Dave");
         l.logInfo("Lets join some objects");
         l.logInfo("This should output 1, 2, true, \"hello\"");
@@ -62,20 +61,4 @@ public class TestLogger extends ClassLogger {
         l.logInfo("Well I hope that worked");
     }
 
-    @Test
-    public void testClassLogger() {
-            logInfo("Class logger here");
-        logInfo("Lets join some objects");
-        logInfo("This should output 1, 2, true, \"hello\"");
-        logInfo(1, 2, true, "hello");
-
-        logInfo("Alright, now to try levels");
-        logDebug("debug");
-        logInfo("info");
-        logWarning("warning");
-        logError("error");
-        logCritical("critical");
-
-        logInfo("Well I hope that worked");
-    }
 }

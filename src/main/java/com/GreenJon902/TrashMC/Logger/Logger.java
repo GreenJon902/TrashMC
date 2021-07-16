@@ -2,14 +2,14 @@ package com.GreenJon902.TrashMC.Logger;
 
 import java.util.Locale;
 
-public class BaseLogger {
+public class Logger {
     String name;
 
-    public BaseLogger(String name) {
+    public Logger(String name) {
         this.name = name;
     }
 
-    public BaseLogger() {
+    public Logger() {
         this.name = "None";
     }
 

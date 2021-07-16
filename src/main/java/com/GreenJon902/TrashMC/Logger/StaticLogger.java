@@ -1,7 +1,7 @@
 package com.GreenJon902.TrashMC.Logger;
 
 public class StaticLogger {
-    private static final BaseLogger baseLogger = new BaseLogger();
+    private static final Logger baseLogger = new Logger();
 
 
     @SafeVarargs
