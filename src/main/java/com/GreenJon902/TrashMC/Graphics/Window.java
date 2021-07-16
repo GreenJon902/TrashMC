@@ -22,7 +22,6 @@ public class Window extends GLCanvas {
         Window window = this;
         SwingUtilities.invokeLater(() -> {
             frame.getContentPane().add(window);
-            System.out.println("hi3");
         });
         System.out.println("hi4");
     }
