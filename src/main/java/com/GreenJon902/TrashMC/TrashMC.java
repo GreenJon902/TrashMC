@@ -1,7 +1,7 @@
 package com.GreenJon902.TrashMC;
 
 
-import com.GreenJon902.TrashMC.Graphics.Window;
+import com.GreenJon902.TrashMC.graphics.Window;
 
 import java.util.logging.Logger;
 

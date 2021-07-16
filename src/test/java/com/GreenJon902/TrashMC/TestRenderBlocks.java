@@ -1,7 +1,7 @@
 package com.GreenJon902.TrashMC;
 
-import com.GreenJon902.TrashMC.Graphics.BlockRenderer;
-import com.GreenJon902.TrashMC.Graphics.Window;
+import com.GreenJon902.TrashMC.graphics.BlockRenderer;
+import com.GreenJon902.TrashMC.graphics.Window;
 import com.hackoeur.jglm.Vec4;
 import org.junit.jupiter.api.Test;
 

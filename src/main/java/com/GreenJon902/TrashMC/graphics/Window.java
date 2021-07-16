@@ -1,4 +1,4 @@
-package com.GreenJon902.TrashMC.Graphics;
+package com.GreenJon902.TrashMC.graphics;
 
 
 import javax.swing.*;
