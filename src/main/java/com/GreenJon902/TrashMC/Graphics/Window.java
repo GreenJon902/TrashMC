@@ -1,29 +1,23 @@
 package com.GreenJon902.TrashMC.Graphics;
 
 
-import com.jogamp.opengl.awt.GLCanvas;
-
 import javax.swing.*;
 
-public class Window extends GLCanvas {
+public class Window extends JFrame {
     int fps = 1;
 
-    final JFrame frame = new JFrame();
+    final BlockRenderer blockRenderer = new BlockRenderer(); // Because i cant use a static version
 
 
     public Window() {
-        System.out.println("yo2");
+        super("TrashMC");
+        setSize(1080, 720);
+
         build();
-        System.out.println("Yo3");
     }
 
     private void build() {
-        System.out.println("hi2");
-        Window window = this;
-        SwingUtilities.invokeLater(() -> {
-            frame.getContentPane().add(window);
-        });
-        System.out.println("hi4");
+        this.add(this.blockRenderer);
     }
 
     public void open() {

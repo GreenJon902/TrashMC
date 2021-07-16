@@ -5,8 +5,6 @@ import com.GreenJon902.TrashMC.Graphics.Window;
 import com.hackoeur.jglm.Vec4;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-
 public class TestRenderBlocks {
     @Test
     public void testRenderBlocks() {

@@ -9,13 +9,8 @@ import com.hackoeur.jglm.Vec4;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-import com.hackoeur.jglm.Vec4;
-
-import java.util.ArrayList;
-
-public class BlockRenderer {
+public class BlockRenderer extends Canvas {
     public static ArrayList<Vec4> blocks = new ArrayList<>();
 
     public static Vec4 camera = new Vec4(0, 0, -100, 1);
