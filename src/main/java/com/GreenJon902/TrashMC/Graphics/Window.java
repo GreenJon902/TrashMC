@@ -6,9 +6,6 @@ import javax.swing.*;
 public class Window extends JFrame {
     int fps = 1;
 
-    final BlockRenderer blockRenderer = new BlockRenderer(); // Because i cant use a static version
-
-
     public Window() {
         super("TrashMC");
         setSize(1080, 720);
@@ -17,7 +14,7 @@ public class Window extends JFrame {
     }
 
     private void build() {
-        this.add(this.blockRenderer);
+        this.add(BlockRenderer.canvas);
     }
 
     public void open() {
@@ -39,7 +36,7 @@ public class Window extends JFrame {
 
             if (dTime > fpns) {
                 lastTime = time;
-                //BlockRenderer.draw(this.getGraphics());
+                BlockRenderer.draw();
             }
         }
     }

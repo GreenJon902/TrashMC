@@ -14,8 +14,11 @@ public class BlockRenderer extends Canvas {
     public static ArrayList<Vec4> blocks = new ArrayList<>();
 
     public static Vec4 camera = new Vec4(0, 0, -100, 1);
+    public static final Canvas canvas = new Canvas();
 
-    public static void draw(Graphics g) {
+    public static void draw() {
+        Graphics g = canvas.getGraphics();
+
         g.setColor(Color.red);
 
         int[] xPoints = new int[4];
