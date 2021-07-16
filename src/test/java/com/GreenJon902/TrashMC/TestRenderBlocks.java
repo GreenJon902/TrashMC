@@ -10,9 +10,7 @@ import java.util.ArrayList;
 public class TestRenderBlocks {
     @Test
     public void testRenderBlocks() {
-        System.out.println("hi");
         Window window = new Window();
-        System.out.println("hi5");
         BlockRenderer.blocks.add(new Vec4(100, 50, 30, 1));
         BlockRenderer.blocks.add(new Vec4(200, 50, 30, 1));
         BlockRenderer.blocks.add(new Vec4(300, 50, 30, 1));

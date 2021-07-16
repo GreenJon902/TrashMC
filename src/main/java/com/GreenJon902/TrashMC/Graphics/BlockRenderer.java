@@ -1,15 +1,15 @@
 package com.GreenJon902.TrashMC.Graphics;
 
 
-//import com.hackoeur.jglm.Mat4;
-//import com.hackoeur.jglm.Matrices;
-//import com.hackoeur.jglm.Vec3;
-//import com.hackoeur.jglm.Vec4;
+import com.hackoeur.jglm.Mat4;
+import com.hackoeur.jglm.Matrices;
+import com.hackoeur.jglm.Vec3;
+import com.hackoeur.jglm.Vec4;
 
-//import java.awt.*;
-//import java.util.ArrayList;
-//import java.util.Arrays;
-//import java.util.List;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import com.hackoeur.jglm.Vec4;
 
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class BlockRenderer {
     public static ArrayList<Vec4> blocks = new ArrayList<>();
 
-    /*public static Vec4 camera = new Vec4(0, 0, -100, 1);
+    public static Vec4 camera = new Vec4(0, 0, -100, 1);
 
     public static void draw(Graphics g) {
         g.setColor(Color.red);
@@ -161,5 +161,4 @@ public class BlockRenderer {
 
         return new int[]{(int) nx, (int) ny};
     }
-    */
 }
