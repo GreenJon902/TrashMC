@@ -3,7 +3,15 @@ package com.GreenJon902.TrashMC.Logger;
 import java.util.Locale;
 
 public class BaseLogger {
-    String name = getClass().getName();
+    String name;
+
+    public BaseLogger(String name) {
+        this.name = name;
+    }
+
+    public BaseLogger() {
+        this.name = "None";
+    }
 
     @SafeVarargs
     public final <T>void logDebug(T... items) {
@@ -46,4 +54,5 @@ public class BaseLogger {
     private void _log(int levelNo, String string) {
         System.out.printf("[%-8s]  [%-64s]   %s%n", Levels.name(levelNo).toUpperCase(Locale.ROOT), name, string);
     }
+
 }

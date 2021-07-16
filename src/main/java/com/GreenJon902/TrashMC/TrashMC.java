@@ -1,18 +1,20 @@
 package com.GreenJon902.TrashMC;
 
 
+import com.GreenJon902.TrashMC.Logger.ClassLogger;
 import com.GreenJon902.TrashMC.graphics.Window;
 
-import java.util.logging.Logger;
 
-public class TrashMC {
-    private static final Logger LOGGER = Logger.getLogger(TrashMC.class.getName());
+public class TrashMC extends ClassLogger {
 
     public static Boolean running = false;
 
+    private static Window window;
+
     public static void setup() {
-        Window window = new Window();
-        window.open();
+        logInfo("TrashMC Setting up");
+        window = new Window();
+        logInfo("TrashMC Set up");
     }
 
 
@@ -23,16 +25,14 @@ public class TrashMC {
 
         running = true;
 
-        LOGGER.info("TrashMC Setting up");
-
         setup();
 
-        LOGGER.info("TrashMC Starting");
-        LOGGER.info("TrashMC Finished");
+        logInfo("TrashMC Starting");
+        window.open();
+        logInfo("TrashMC Finished");
     }
 
     public static void main(String[] args) {
-        System.out.println("yo");
         setup();
         start();
     }
